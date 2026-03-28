@@ -1,0 +1,26 @@
+<section class="testimonials-carousel-section py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <p class="label">TESTIMONIAL</p>
+      <h2 class="title">What they say about us</h2>
+      <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <button class="nav prev" (click)="prev()" aria-label="Previous">‹</button>
+      <div #carousel class="carousel" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <div *ngFor="let t of testimonials; let i = index" class="testimonial-card">
+          <div class="avatar"><img [src]="t.avatar" alt="{{t.name}}"></div>
+          <p class="quote">{{ t.quote }}</p>
+          <h4 class="person">{{ t.name }}</h4>
+          <div class="city">{{ t.city }}</div>
+        </div>
+      </div>
+      <button class="nav next" (click)="next()" aria-label="Next">›</button>
+    </div>
+
+    <div class="dots text-center mt-4">
+      <button *ngFor="let t of testimonials; let i = index" class="dot" [class.active]="i === currentIndex" (click)="goTo(i)"></button>
+    </div>
+  </div>
+</section>

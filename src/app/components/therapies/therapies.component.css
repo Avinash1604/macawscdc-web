@@ -1,0 +1,347 @@
+.therapies-section {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  padding: 80px 0;
+}
+
+/* Header */
+.therapies-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Therapy Cards */
+.therapy-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.therapy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Animations */
+@keyframes slideUpFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Highlighted Card (Physical Therapy) */
+.therapy-card.highlighted {
+  background: white;
+  color: white;
+}
+
+.therapy-card.highlighted .therapy-content {
+  background: white;
+  padding: 32px 24px;
+}
+
+.therapy-card.highlighted:hover .therapy-content {
+  background: linear-gradient(135deg, #00B3AD 0%, #009a95 100%);
+  color: white;
+}
+
+.therapy-card.highlighted .therapy-title {
+  color: #1047C0;
+}
+
+.therapy-card.highlighted:hover .therapy-title {
+  color: white;
+}
+
+.therapy-card.highlighted .therapy-icon {
+  background: #e8f5f4;
+  border-color: #00B3AD;
+  color: #00B3AD;
+}
+
+.therapy-card.highlighted:hover .therapy-icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.therapy-card.highlighted .therapy-description-short p,
+.therapy-card.highlighted .therapy-description-full p {
+  color: #666;
+}
+
+.therapy-card.highlighted:hover .therapy-description-short p,
+.therapy-card.highlighted:hover .therapy-description-full p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.therapy-card.highlighted .therapy-description-short {
+  display: block;
+}
+
+.therapy-card.highlighted:hover .therapy-description-short {
+  display: none !important;
+}
+
+.therapy-card.highlighted .therapy-description-full {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 0;
+}
+
+.therapy-card.highlighted:hover .therapy-description-full {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Image */
+.therapy-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.therapy-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.therapy-card:hover .therapy-image img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.therapy-content {
+  background: white;
+  padding: 32px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: auto;
+  margin-top: -80px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.45s ease, background 0.45s ease, color 0.45s ease;
+  z-index: 5;
+}
+
+.therapy-card:hover .therapy-content {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #00B3AD 0%, #009a95 100%);
+  color: white;
+  animation: slideUpFromBottom 0.45s ease;
+}
+
+/* Icon */
+.therapy-icon {
+  width: 56px;
+  height: 56px;
+  background: #e8f5f4;
+  border: 2px solid #00B3AD;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: #00B3AD;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.therapy-card:hover .therapy-icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Title */
+.therapy-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.therapy-card:hover .therapy-title {
+  color: white;
+}
+
+/* Description - Short (Default) */
+.therapy-description-short {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+
+.therapy-description-short p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.therapy-card.highlighted .therapy-description-short {
+  display: block;
+}
+
+/* Description - Full (Hover) */
+.therapy-description-full {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(10px);
+}
+
+.therapy-description-full p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.therapy-card:hover .therapy-description-full {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.therapy-card.highlighted .therapy-description-full {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.therapy-card.highlighted:hover .therapy-description-full {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.therapy-card.highlighted:hover .therapy-description-full p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  display: inline-block;
+  color: #00B3AD;
+  border: 2px solid #00B3AD;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Londrina Solid", sans-serif;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: fit-content;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.therapy-card:hover .learn-more-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.learn-more-btn:hover {
+  background-color: #00B3AD;
+  color: white;
+}
+
+.therapy-card.highlighted .learn-more-btn {
+  color: white;
+  border-color: white;
+}
+
+.therapy-card.highlighted:hover .learn-more-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.therapy-card.highlighted .learn-more-btn:hover {
+  background-color: white;
+  color: #00B3AD;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .therapies-title {
+    font-size: 1.8rem;
+  }
+
+  .therapy-image {
+    height: 240px;
+  }
+
+  .therapy-content {
+    min-height: 240px;
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .therapies-section {
+    padding: 60px 0;
+  }
+
+  .therapies-title {
+    font-size: 1.5rem;
+  }
+
+  .therapy-image {
+    height: 220px;
+  }
+
+  .therapy-content {
+    min-height: 220px;
+    padding: 20px 16px;
+  }
+
+  .therapy-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .therapy-title {
+    font-size: 1.2rem;
+  }
+
+  .therapy-description-short p,
+  .therapy-description-full p {
+    font-size: 0.9rem;
+  }
+
+  .learn-more-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,30 @@
+.kindera-footer { background: #fff; color: #555; }
+.footer-top { padding: 60px 0; }
+.footer-brand-icon { width:56px;height:56px;background:transparent;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--kindera-primary);font-size:28px; }
+.footer-brand-name { font-family:'Londrina Solid',sans-serif;font-weight:800;font-size:28px;color:var(--kindera-primary); }
+.footer-about { font-size:15px;line-height:1.9;max-width:320px;color:#6b6b6b; }
+.footer-socials { display:flex;gap:12px;margin-top:22px; }
+.footer-socials a { width:44px;height:44px;background:var(--kindera-accent, rgba(0,179,173,0.12));border-radius:10px;color:var(--kindera-primary);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:18px;transition:all 0.2s; }
+.footer-socials a:hover { background:var(--kindera-primary);color:#fff; }
+.footer-heading { color:#222;font-size:18px;font-weight:800;margin-bottom:14px; }
+.footer-heading.blue { color:var(--kindera-primary); }
+.footer-links { list-style:none;padding:0;margin:0; }
+.footer-links li { margin-bottom:10px; }
+.footer-links a { color:#6b6b6b;text-decoration:none;font-size:14px;transition:color 0.15s;display:block; }
+.footer-links a:hover { color:var(--kindera-primary); }
+.footer-links a::before { content:none; }
+.footer-illustration { max-width:320px; display:block; margin:0 auto; }
+.newsletter-row { gap: 24px; }
+.newsletter-title { font-size:20px; margin:0; color:#333; font-weight:800; }
+.newsletter-form-large { display:flex; align-items:center; border-radius:12px; overflow:hidden; }
+.newsletter-input-large { padding:14px 18px; border:1px solid #eee; min-width:260px; width:320px; border-radius:6px 0 0 6px; outline:none; }
+.newsletter-btn-large { background:var(--kindera-accent, #00B3AD); color:#fff; border:none; padding:12px 22px; border-radius:0 6px 6px 0; cursor:pointer; margin-left:8px; }
+.footer-bottom { background:#f3f6fa; padding:18px 0; font-size:14px; color:#6b6b6b; }
+.footer-bottom a { color:var(--kindera-primary); text-decoration:none; margin-left:8px; }
+.footer-bottom a:first-child { margin-left:0; }
+
+@media (max-width: 991px) {
+	.illustration-col { display:none !important; }
+	.newsletter-input-large { width:200px; }
+	.newsletter-row { flex-direction:column; align-items:flex-start; }
+}

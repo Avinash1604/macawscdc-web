@@ -1,0 +1,17 @@
+.help-cards-section { background: linear-gradient(180deg,#fbfdfe 0%, #ffffff 100%); padding: 72px 0; }
+
+.help-title { font-family: "Londrina Solid", sans-serif; color: #1047C0; font-size: 2rem; margin-bottom: 8px; }
+.help-lead { color: #6b6f77; max-width: 900px; margin: 0 auto 28px; }
+
+.help-card { background: white; border-radius: 12px; padding: 36px 28px; box-shadow: 0 18px 40px rgba(16,71,192,0.06); min-height: 300px; }
+.help-icon { width: 72px; height: 72px; border-radius: 50%; background: #e8f5f4; color: #00B3AD; display:flex; align-items:center; justify-content:center; font-size:34px; margin-top:-48px; box-shadow: 0 8px 18px rgba(0,0,0,0.04); }
+.help-card-title { color: #1047C0; font-family: "Londrina Solid", sans-serif; margin-top: 18px; margin-bottom: 12px; }
+.help-card-desc { color: #6b6f77; line-height:1.6; }
+
+.btn-cta { display:inline-block; background: #00B3AD; color: white; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight:600; }
+.btn-cta:hover { background: #009a95; }
+
+@media (max-width: 992px) {
+  .help-card { min-height: 260px; padding: 28px; }
+  .help-icon { width:64px; height:64px; font-size:28px; margin-top:-40px; }
+}

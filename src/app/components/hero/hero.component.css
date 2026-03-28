@@ -1,0 +1,77 @@
+:root {
+  --bs-primary: #1047C0;
+  --bs-secondary: #00B3AD;
+  --bs-danger: #DC3545;
+  --bs-light: #f8f9fa;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Typography */
+h1 {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+h6 {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 0.875rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #00B3AD;
+  border-color: #00B3AD;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #00a29d;
+  border-color: #00a29d;
+}
+
+.btn-outline-secondary {
+  color: #545454;
+  border-color: #545454;
+  font-weight: 500;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.btn-outline-secondary:hover {
+  background-color: transparent;
+  color: #00B3AD;
+  border-color: #00B3AD;
+}
+
+/* Section spacing */
+section {
+  padding: 3rem 0 7rem 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 0 4rem 0;
+  }
+}

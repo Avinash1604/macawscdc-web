@@ -1,0 +1,39 @@
+.about-header {
+  background: linear-gradient(135deg, rgba(240, 245, 250, 0.8), rgba(210, 240, 245, 0.6));
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-header-content {
+  padding: 40px 24px;
+}
+
+.about-title {
+  color: var(--kindera-primary);
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  font-family: 'Londrina Solid', sans-serif;
+}
+
+.about-subtitle {
+  color: var(--kindera-text);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: 60px 0;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-subtitle {
+    font-size: 16px;
+  }
+}

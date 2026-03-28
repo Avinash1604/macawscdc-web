@@ -1,0 +1,16 @@
+/* Header fixes to avoid overlap from template negative margins */
+.elementor-38 .elementor-element.elementor-element-be217c6 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  z-index: 9999 !important;
+}
+@media (max-width: 1024px) {
+  .elementor-38 .elementor-element.elementor-element-be217c6 {
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .elementor-38 .elementor-element.elementor-element-be217c6 {
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,25 @@
+.get-appointment-section { padding: 72px 0; }
+
+.appointment-card { background: white; border-radius: 12px; padding: 34px; box-shadow: 0 22px 50px rgba(2,6,23,0.06); }
+.ga-title { font-family: "Londrina Solid", sans-serif; color: #1047C0; font-size: 2rem; margin-bottom: 18px; }
+
+.form-label { font-weight: 600; color: #333; margin-bottom: 8px; display: block; }
+.form-control, .form-select { background: #f5f6f9; border: 0; padding: 14px 16px; border-radius: 8px; }
+.form-control:focus, .form-select:focus { outline: none; box-shadow: 0 0 0 3px rgba(16,71,192,0.06); }
+.btn-cta { background: #00B3AD; color: white; padding: 12px 18px; border-radius: 8px; border: 0; }
+
+.help-panel { padding: 28px 18px; }
+.help-panel .label { color: #00B3AD; font-weight:700; margin-bottom:8px; }
+.help-panel .help-title { font-family: "Londrina Solid", sans-serif; color: #1047C0; font-size: 1.6rem; }
+.help-panel .help-desc { color: #6b6f77; margin-top: 12px; }
+
+.info-row { display: flex; gap: 28px; margin-top: 22px; }
+.info-item { display:flex; gap: 14px; align-items: center; border-top: 1px solid rgba(0,0,0,0.04); padding-top: 18px; }
+.info-icon { font-size: 28px; color: #00B3AD; }
+.info-label { font-size: 12px; color: #6b6f77; font-weight:700; }
+.info-value { font-weight:900; color:#212121; margin-top:4px; }
+
+@media (max-width: 992px) {
+  .appointment-card { padding: 20px; }
+  .help-panel { margin-top: 18px; }
+}

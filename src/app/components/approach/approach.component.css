@@ -1,0 +1,153 @@
+.approach-section {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  padding: 80px 0;
+}
+
+/* Header */
+.approach-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.approach-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Steps Container */
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  position: relative;
+}
+
+/* Step */
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.step.last .step-line {
+  display: none;
+}
+
+/* Dashed Line */
+.step-line {
+  position: absolute;
+  top: 40px;
+  left: calc(50% + 30px);
+  right: calc(-50% + 30px);
+  height: 2px;
+  border-top: 2px dashed #00B3AD;
+  z-index: 1;
+}
+
+/* Step Circle */
+.step-circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #00B3AD 0%, #009a95 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 179, 173, 0.3);
+  flex-shrink: 0;
+}
+
+.step-number {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+/* Step Content */
+.step-content {
+  flex-grow: 1;
+}
+
+.step-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.step-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .step-line {
+    left: calc(50% + 25px);
+    right: calc(-50% + 25px);
+  }
+
+  .step-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .step-number {
+    font-size: 1.5rem;
+  }
+
+  .step-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .approach-section {
+    padding: 60px 0;
+  }
+
+  .approach-title {
+    font-size: 2rem;
+  }
+
+  .approach-description {
+    font-size: 1rem;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .step-line {
+    display: none;
+  }
+
+  .step-circle {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+  }
+
+  .step-number {
+    font-size: 1.25rem;
+  }
+
+  .step-title {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,32 @@
+<section class="approach-section py-5">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h2 class="approach-title mb-3">Our Approach</h2>
+      <p class="approach-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    </div>
+
+    <!-- Steps -->
+    <div class="row">
+      <div class="col-12">
+        <div class="steps-container">
+          <div *ngFor="let step of steps; let i = index" class="step" [class.last]="i === steps.length - 1">
+            <!-- Dashed Line -->
+            <div class="step-line" *ngIf="i < steps.length - 1"></div>
+            
+            <!-- Step Circle -->
+            <div class="step-circle">
+              <span class="step-number">{{ step.number }}</span>
+            </div>
+
+            <!-- Step Content -->
+            <div class="step-content">
+              <h3 class="step-title">{{ step.title }}</h3>
+              <p class="step-description">{{ step.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

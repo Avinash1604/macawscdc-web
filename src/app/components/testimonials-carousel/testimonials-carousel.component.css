@@ -1,0 +1,31 @@
+.testimonials-carousel-section { background: transparent; }
+
+.testimonials-carousel-section .label { color: #00B3AD; font-weight:700; }
+.testimonials-carousel-section .title { font-family: "Londrina Solid", sans-serif; color: #1047C0; font-size: 2rem; }
+.testimonials-carousel-section .subtitle { color: #6b6f77; max-width: 900px; margin: 0 auto 24px; }
+
+.carousel-wrapper { position: relative; display: flex; align-items: center; }
+.carousel { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 8px 40px; scroll-behavior: smooth; }
+.testimonial-card { scroll-snap-align: center; min-width: 320px; max-width: 420px; flex: 0 0 auto; background: #f3f4f9; padding: 36px 28px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); text-align: center; }
+.avatar { width: 72px; height:72px; border-radius:50%; margin: -56px auto 16px; overflow:hidden; border:6px solid white; box-shadow: 0 6px 16px rgba(0,0,0,0.06); }
+.avatar img { width:100%; height:100%; object-fit:cover; }
+.quote { color:#595b60; line-height:1.6; margin-top: 12px; min-height: 96px; }
+.person { color:#1047C0; font-family: "Londrina Solid", sans-serif; margin-top: 18px; font-size: 1.05rem; }
+.city { color:#6b6f77; font-weight:600; }
+
+.nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: 0; width:44px; height:44px; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.08); display:flex; align-items:center; justify-content:center; font-size:22px; cursor:pointer; }
+.nav.prev { left: 6px; }
+.nav.next { right: 6px; }
+
+.dots .dot { width:10px; height:10px; border-radius:50%; border:2px solid #ddd; margin:0 6px; background:transparent; display:inline-block; cursor:pointer; }
+.dots .dot.active { background:#00B3AD; border-color:#00B3AD; }
+
+/* hide native scrollbar for cleaner UI */
+.carousel::-webkit-scrollbar { height:10px; }
+.carousel::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.08); border-radius: 6px; }
+
+@media (max-width: 768px) {
+  .carousel { padding: 8px 16px; gap: 14px; }
+  .testimonial-card { min-width: 280px; padding: 28px 20px; }
+  .avatar { width:64px; height:64px; margin-top: -48px; }
+}

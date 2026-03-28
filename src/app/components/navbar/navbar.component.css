@@ -1,0 +1,57 @@
+:root {
+    --e-global-color-primary: #545454;
+    --e-global-color-secondary: #1047C0;
+    --e-global-color-text: #FFFFFF;
+    --e-global-color-accent: #FFFFFF2B;
+    --e-global-color-d49ac81: #00B3AD;
+    --e-global-typography-primary-font-family: "Londrina Solid";
+}
+
+.navbar {
+    background-color: transparent;
+    font-family: var(--e-global-typography-primary-font-family), sans-serif;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--e-global-color-primary);
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link {
+    color: var(--e-global-color-d49ac81);
+}
+
+.btn-primary {
+    background-color: var(--e-global-color-d49ac81);
+    border-color: var(--e-global-color-d49ac81);
+    color: var(--e-global-color-text);
+}
+
+.btn-primary:hover {
+    background-color: #00a29d; 
+    border-color: #00a29d;
+}
+
+.navbar .navbar-nav {
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.navbar .navbar-nav .nav-link.dropdown-toggle {
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: inherit;
+    padding: 0.5rem 0;
+}
+
+.navbar .navbar-nav .nav-link.dropdown-toggle::after {
+    margin-left: 0.25rem;
+}
+
+.navbar .navbar-nav .nav-link.dropdown-toggle:hover,
+.navbar .navbar-nav .nav-link.dropdown-toggle.show {
+    background-color: transparent !important;
+}

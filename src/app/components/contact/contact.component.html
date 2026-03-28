@@ -1,0 +1,97 @@
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Contact us</h2>
+      <p class="section-subtitle">
+        We would love to hear from you.
+      </p>
+    </div>
+
+    <div class="row g-5 align-items-start">
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="contact-info-card">
+          <h5 class="cic-title">Let's start talking with us</h5>
+
+          <div class="ci-item" *ngFor="let item of contactItems">
+            <div class="ci-icon" [style.background]="item.bg" [style.color]="item.color">
+              <i [class]="'bi ' + item.icon"></i>
+            </div>
+            <div>
+              <div class="ci-label">{{ item.label }}</div>
+              <div class="ci-value">{{ item.value }}</div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="office-hours mt-4">
+            <h6>Office Hours</h6>
+            <div class="oh-row"><span>Monday – Friday</span><span class="text-primary fw-bold">9am – 6pm</span></div>
+            <div class="oh-row"><span>Saturday</span><span class="text-primary fw-bold">10am – 3pm</span></div>
+            <div class="oh-row"><span>Sunday</span><span class="text-muted">Closed</span></div>
+          </div>
+
+          <!-- Social -->
+          <div class="contact-socials mt-4">
+            <a href="#" class="cs-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="cs-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="cs-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="cs-btn"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="col-lg-8">
+        <div class="contact-form-card">
+          <div *ngIf="!submitted">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Name</label>
+                <input type="text" class="form-control kindera-input"
+                       [(ngModel)]="form.parentName" placeholder="Your full name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Email</label>
+                <input type="email" class="form-control kindera-input"
+                       [(ngModel)]="form.email" placeholder="your@email.com">
+              </div>
+              <div class="col-12">
+                <label class="form-label fw-bold">Message</label>
+                <textarea class="form-control kindera-input" rows="4"
+                          [(ngModel)]="form.message"
+                          placeholder="Message"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" (click)="submitForm()">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Success State -->
+          <div *ngIf="submitted" class="success-state text-center py-5">
+            <div class="success-emoji">🎉</div>
+            <h4 class="mt-3">Thank You, {{ form.parentName }}!</h4>
+            <p>We've received your request and will contact you within one business day to confirm your free consultation.</p>
+            <button class="btn btn-outline-primary mt-3" (click)="submitted = false">Submit Another Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="contact-map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1050889745906!2d-74.00601!3d40.71277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a31867351e1%3A0x8265a2a14c54e7c!2s123%20Healing%20Way%2C%20Suite%20201%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890"
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>

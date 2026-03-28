@@ -1,0 +1,42 @@
+<section class="therapies-section py-5">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h2 class="therapies-title">Helping children discover their inner strength and resilience</h2>
+    </div>
+
+    <!-- Therapy Cards -->
+    <div class="row g-4">
+      <div *ngFor="let therapy of therapies" class="col-lg-4">
+        <div class="therapy-card" [class.highlighted]="therapy.isHighlighted">
+          <!-- Image -->
+          <div class="therapy-image">
+            <img [src]="therapy.image" [alt]="therapy.title" class="img-fluid">
+          </div>
+
+          <!-- Content -->
+          <div class="therapy-content">
+            <!-- Icon -->
+            <div class="therapy-icon">
+              <i [class]="'bi ' + therapy.icon"></i>
+            </div>
+
+            <!-- Title -->
+            <h3 class="therapy-title">{{ therapy.title }}</h3>
+
+            <!-- Description (shown by default) -->
+            <div class="therapy-description-short">
+              <p>{{ therapy.description }}</p>
+            </div>
+
+            <!-- Full Description (shown on hover) -->
+            <div class="therapy-description-full">
+              <p>{{ therapy.fullDescription }}</p>
+              <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

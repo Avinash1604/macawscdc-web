@@ -1,0 +1,39 @@
+# Node
+node_modules/
+
+# Build output
+dist/
+
+# Angular
+.angular/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Misc
+coverage/
+
+# Compiled output
+*.tsbuildinfo
+
+# Others
+package-lock.json
+
+# Optional: Uncomment if you use Macawscdc-specific files
+# Macawscdc/

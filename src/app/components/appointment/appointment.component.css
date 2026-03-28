@@ -1,0 +1,164 @@
+.appointment-section {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  padding: 60px 0;
+}
+
+/* Appointment Form Card */
+.appointment-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.appointment-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Form Inputs */
+.form-control {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.form-control:focus {
+  background-color: white;
+  border-color: #1047C0;
+  box-shadow: 0 0 0 0.2rem rgba(16, 71, 192, 0.1);
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+/* Book Now Button */
+.btn-appointment {
+  background-color: #1047C0;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.btn-appointment:hover {
+  background-color: #0a2f7d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 71, 192, 0.3);
+}
+
+.btn-appointment:disabled {
+  background-color: #d0d0d0;
+  cursor: not-allowed;
+}
+
+/* Help Card */
+.help-card {
+  background: linear-gradient(135deg, #00B3AD 0%, #009a95 100%);
+  border-radius: 16px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 10px 40px rgba(0, 179, 173, 0.3);
+}
+
+.help-title {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.help-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Call Section */
+.help-call {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.call-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.call-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+  opacity: 0.9;
+}
+
+.call-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appointment-section {
+    padding: 40px 0;
+  }
+
+  .appointment-card,
+  .help-card {
+    padding: 30px;
+  }
+
+  .appointment-title,
+  .help-title {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .row.g-2 {
+    flex-direction: column;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .call-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .call-number {
+    font-size: 1.25rem;
+  }
+}
