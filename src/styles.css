@@ -1,7 +1,14 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;700&display=swap');
 @import './styles/header-fix.css';
+
+/* Font utility classes */
+.font-inter {
+  font-family: 'Inter', sans-serif !important;
+}
+.font-londrina {
+  font-family: 'Londrina Solid', sans-serif !important;
+}
 
 .text-primary {
   font-family: 'Londrina Solid', sans-serif;
