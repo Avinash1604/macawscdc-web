@@ -1,4 +1,14 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;700&display=swap');
 @import './styles/header-fix.css';
+
+.text-primary {
+  font-family: 'Londrina Solid', sans-serif;
+}
+:root {
+  --bs-primary-rgb: 16, 71, 192; /* #1047C0 */
+}
 
 :root {
   --e-global-color-primary: #545454;
