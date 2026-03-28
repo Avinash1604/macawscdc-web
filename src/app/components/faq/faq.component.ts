@@ -1,105 +1,32 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HelpCardsComponent } from '../help-cards/help-cards.component';
 
 @Component({
   selector: 'app-faq',
   standalone: true,
-  imports: [CommonModule],
-  template: `
-    <section id="faq" class="faq-section">
-      <div class="container">
-        <div class="row g-5 align-items-start">
-          <div class="col-lg-4">
-            <div class="section-badge">PAYMENT QUESTIONS</div>
-            <h2 class="section-title">Most Popular <span class="text-primary">Questions</span></h2>
-            <p class="mt-3 mb-4" style="color:var(--kindera-text)">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-            <a href="#contact" class="btn btn-primary">
-              <i class="bi bi-chat-dots me-2"></i>Ask Us Anything
-            </a>
-
-            <div class="faq-contact-card mt-4">
-              <div class="fcc-icon">📞</div>
-              <div>
-                <div class="fcc-label">Still have questions?</div>
-                <div class="fcc-phone">+1 (555) 123-4567</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="accordion faq-accordion" id="faqAccordion">
-              <div class="faq-item" *ngFor="let item of faqs; let i = index">
-                <div class="faq-question" (click)="toggle(i)" [class.active]="openIndex === i">
-                  <span class="faq-q-text">{{ item.q }}</span>
-                  <i class="bi" [ngClass]="openIndex === i ? 'bi-chevron-down' : 'bi-chevron-right'"></i>
-                </div>
-                <div class="faq-answer" [class.open]="openIndex === i">
-                  <p>{{ item.a }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  `,
-  styles: [`
-    .faq-section {
-      padding: 80px 0;
-      background: #ffffff;
-    }
-
-    .faq-contact-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 18px 20px;
-      display: flex; align-items: center; gap: 14px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .fcc-icon { font-size: 32px; }
-    .fcc-label { font-size: 12px; color: var(--kindera-text); font-weight: 600; }
-    .fcc-phone { font-size: 16px; font-weight: 800; color: var(--kindera-primary); }
-
-    .faq-item { margin-bottom: 16px; }
-    .faq-question {
-      background: #f3f4f9;
-      border-radius: 14px;
-      padding: 20px 26px;
-      display: flex; justify-content: space-between; align-items: center;
-      cursor: pointer;
-      font-weight: 800; font-size: 1.05rem;
-      color: #333;
-      box-shadow: none;
-      transition: background 0.2s, color 0.2s;
-      gap: 12px;
-    }
-    .faq-question:hover { background: #eceef6; }
-    .faq-question.active { background: #eceef6; }
-    .faq-question i { font-size: 22px; flex-shrink: 0; color: #333; }
-    .faq-q-text { display:block; }
-
-    .faq-answer {
-      max-height: 0; overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.3s;
-      background: #fff; border-radius: 0 0 12px 12px;
-      padding: 0 22px;
-      margin-top: 6px;
-      box-shadow: 0 6px 18px rgba(16,71,192,0.03);
-    }
-    .faq-answer.open {
-      max-height: 220px;
-      padding: 18px 22px 22px;
-    }
-    .faq-answer p { margin: 0; font-size: 14px; color: var(--kindera-text); line-height: 1.8; }
-  `]
+  imports: [CommonModule, HelpCardsComponent],
+  templateUrl: './faq.component.html',
+  styleUrls: ['./faq.component.css']
 })
 export class FaqComponent {
+  categories = ['PAYMENT QUESTIONS', 'THERAPY SESSIONS', 'GENERAL INFO'];
+  selectedCategory = 'PAYMENT QUESTIONS';
   openIndex: number | null = 0;
 
   toggle(i: number) {
     this.openIndex = this.openIndex === i ? null : i;
+  }
+
+  selectCategory(cat: string) {
+    this.selectedCategory = cat;
+    this.openIndex = 0; // Reset open accordion on category change
+  }
+
+  get filteredFaqs() {
+    if (this.selectedCategory === 'PAYMENT QUESTIONS') return [this.faqs[2], this.faqs[5]];
+    if (this.selectedCategory === 'THERAPY SESSIONS') return [this.faqs[0], this.faqs[1], this.faqs[4], this.faqs[6]];
+    return [this.faqs[3]];
   }
 
   faqs = [

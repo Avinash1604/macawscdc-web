@@ -1,0 +1,49 @@
+      <div class="mb-4">
+            <app-help-cards></app-help-cards>
+          </div>
+<section id="faq" class="faq-section">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <!-- Sidebar Navigation -->
+      <div class="col-lg-4">
+        <div class="faq-nav-sidebar">
+
+          <div class="section-badge mb-3">SUPPORT CENTER</div>
+          <h2 class="section-title mb-4">How can we <span class="text-primary">help?</span></h2>
+          
+          <!-- Category Selection -->
+          <div class="faq-nav-list mb-5">
+            <div 
+              *ngFor="let cat of categories" 
+              (click)="selectCategory(cat)"
+              [class.active]="selectedCategory === cat"
+              class="faq-nav-item">
+              {{ cat }}
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FAQ Accordion Area -->
+      <div class="col-lg-8">
+        <h3 class="category-display-title mb-4">{{ selectedCategory }}</h3>
+        
+        <!-- FAQ List -->
+        <div class="accordion faq-accordion" id="faqAccordion">
+          <div class="faq-item" *ngFor="let item of filteredFaqs; let i = index">
+            <div class="faq-question" (click)="toggle(i)" [class.active]="openIndex === i">
+              <span class="faq-q-text">{{ item.q }}</span>
+              <i class="bi" [ngClass]="openIndex === i ? 'bi-dash-lg' : 'bi-plus-lg'"></i>
+            </div>
+            <div class="faq-answer" [class.open]="openIndex === i">
+              <p>{{ item.a }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

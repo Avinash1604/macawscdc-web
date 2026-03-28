@@ -17,19 +17,22 @@ export class TestimonialsCarouselComponent implements AfterViewInit, OnDestroy {
       name: 'Harrison Foster',
       city: 'BANDUNG',
       quote: 'Quisque egestas consectetuer imperdiet sodales pretium ridiculus proin. Integer praesent nostra est cras potenti egestas. Rhoncus pharetra molestie ipsum urna magna proin consectetur.',
-      avatar: 'assets/theme/avatar1.jpg'
+      avatar: 'assets/theme/avatar1.jpg',
+      rating: 5
     },
     {
       name: 'Jordan Thomson',
       city: 'JAKARTA',
       quote: 'Quisque egestas consectetuer imperdiet sodales pretium ridiculus proin. Integer praesent nostra est cras potenti egestas. Rhoncus pharetra molestie ipsum urna magna proin consectetur.',
-      avatar: 'assets/theme/avatar2.jpg'
+      avatar: 'assets/theme/avatar2.jpg',
+      rating: 5
     },
     {
       name: 'Scarlett Gallagher',
       city: 'BANDUNG',
       quote: 'Quisque egestas consectetuer imperdiet sodales pretium ridiculus proin. Integer praesent nostra est cras potenti egestas. Rhoncus pharetra molestie ipsum urna magna proin consectetur.',
-      avatar: 'assets/theme/avatar3.jpg'
+      avatar: 'assets/theme/avatar3.jpg',
+      rating: 5
     }
   ];
 
