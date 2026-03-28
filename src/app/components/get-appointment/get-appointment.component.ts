@@ -27,7 +27,7 @@ export class GetAppointmentComponent {
   ];
 
   send() {
-    const mailto = `mailto:web.macawscdc@gmail.com?subject=Appointment%20Request&body=` +
+    const mailto = `mailto:accounts@macawscdc.com?subject=Appointment%20Request&body=` +
       encodeURIComponent(
         `Name: ${this.formData.name}\nPhone: ${this.formData.phone}\nEmail: ${this.formData.email}\nDoctor: ${this.formData.doctor}\nDate: ${this.formData.date}\nTime: ${this.formData.time}\nMessage: ${this.formData.message}`
       );
