@@ -16,7 +16,7 @@
             <p class="testi-quote">{{ t.quote }}</p>
             <div class="testi-profile">
               <div class="testi-avatar">
-                <img [src]="t.avatar" [alt]="t.name" onerror="this.src='https://ui-avatars.com/api/?name=' + t.name">
+                <img [src]="t.avatar" [alt]="t.name" (error)="onImgError($event, t.name)">
               </div>
               <div class="testi-info">
                 <h5 class="testi-name">{{ t.name }}</h5>

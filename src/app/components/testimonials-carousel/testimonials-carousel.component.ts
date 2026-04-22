@@ -107,4 +107,11 @@ export class TestimonialsCarouselComponent implements AfterViewInit, OnDestroy {
     this.currentIndex = index;
     this.scrollToIndex(index);
   }
+
+  onImgError(event: Event, name: string) {
+    const img = event.target as HTMLImageElement;
+    if (!img) return;
+    const fallback = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name || 'User');
+    if (img.src !== fallback) img.src = fallback;
+  }
 }
