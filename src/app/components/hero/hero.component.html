@@ -10,9 +10,9 @@
         <!-- Buttons -->
         <div class="d-flex gap-3 flex-wrap fade-in-up delay-400">
           <!-- <a href="#" class="btn btn-primary btn-lg rounded-pill px-5">Discover more</a> -->
-          <a href="#" class="btn btn-outline-secondary btn-lg rounded-pill px-5">
+          <button type="button" class="btn btn-outline-secondary btn-lg rounded-pill px-5" (click)="openVideo()">
             <i class="bi bi-play-fill me-2"></i>Play Intro
-          </a>
+          </button>
         </div>
       </div>
       
@@ -23,4 +23,14 @@
     </div>
   </div>
 </section>
+<!-- Video modal -->
+<div class="video-modal" *ngIf="showVideo">
+  <div class="video-overlay" (click)="closeVideo()"></div>
+  <div class="video-wrapper">
+    <button class="video-close" (click)="closeVideo()" aria-label="Close video">×</button>
+    <div class="video-inner">
+      <iframe *ngIf="sanitizedVideoSrc" [src]="sanitizedVideoSrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 <!-- text-primary -->
