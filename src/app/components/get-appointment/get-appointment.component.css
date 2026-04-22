@@ -23,7 +23,8 @@
   .appointment-card { padding: 20px; }
   .help-panel { margin-top: 18px; }
 }
-/* NAG */
+
+
 .bg-color{
   background-image: url('/assets/img/background.jpeg');
   background-size: cover;
@@ -32,3 +33,6 @@
   /* fallback color */
   background-color: paleturquoise;
 }
+
+
+

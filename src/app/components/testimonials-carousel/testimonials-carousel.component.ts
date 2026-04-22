@@ -25,7 +25,7 @@ export class TestimonialsCarouselComponent implements AfterViewInit, OnDestroy {
       city: 'Bangalore',
       quote: 'The personalized therapy plan and regular progress updates made a huge difference for us.',
       avatar: 'assets/theme/avatar2.jpg',
-      rating: 4
+      rating: 3
     },
     {
       name: 'Anjali M., Mother',
