@@ -13,29 +13,29 @@ export class TherapiesComponent {
     {
       id: 1,
       title: 'Occupational Therapy',
-      description: 'Elit fusce natoque egestas libero finibus si vestibulum commodo id pulvinar venenatis.',
-      fullDescription: 'Commodo consequat at parturient est sagittis tellus vestibulum ultrices laoreet. Pellentesque risus nam cubilia nascetur morbi odio erat.',
-      image: 'assets/theme/little-children-in-art-class-with-teacher.jpg',
+      description: 'Enhancing motor skills for confident, independent living.',
+      fullDescription: 'Our occupational therapy programs are designed to strengthen motor development, sensory processing, and coordination. Through structured, child-friendly activities, we help children gain the skills they need to perform daily tasks with ease and confidence.',
+      image: 'assets/img/OT.png',
       icon: 'bi-heart-pulse',
-      isHighlighted: false
+      isHighlighted: true
     },
     {
       id: 2,
-      title: 'Physical Therapy',
-      description: 'Commodo consequat at parturient est sagittis tellus vestibulum ultrices laoreet. Pellentesque risus nam cubilia nascetur morbi odio erat.',
-      fullDescription: 'Commodo consequat at parturient est sagittis tellus vestibulum ultrices laoreet. Pellentesque risus nam cubilia nascetur morbi odio erat.',
-      image: 'assets/theme/expressing-emotions-through-art.jpg',
+      title: 'School Readiness Program',
+      description: 'Build skills for a confident start to school.',
+      fullDescription: 'Our school readiness program helps children develop attention, communication, early learning skills, and classroom behavior. Through structured and play-based activities, we prepare children to adapt confidently to school routines and learning environments.',
+      image: 'assets/img/SRP.png',
       icon: 'bi-activity',
       isHighlighted: true
     },
     {
       id: 3,
-      title: 'Speech Therapy',
-      description: 'Elit fusce natoque egestas libero finibus si vestibulum commodo id pulvinar venenatis.',
-      fullDescription: 'Commodo consequat at parturient est sagittis tellus vestibulum ultrices laoreet. Pellentesque risus nam cubilia nascetur morbi odio erat.',
-      image: 'assets/theme/happy-family-with-parents-and-kids-posing-together-in-kitchen-preparing-meal-for-christmas-or.jpg',
+      title: 'Behaviour Therapy',
+      description: 'Build positive behaviors and improve focus.',
+      fullDescription: 'Our behavior therapy programs focus on improving attention, emotional regulation, and social interaction. Through personalized strategies and consistent reinforcement, we help children build meaningful behavior patterns and everyday skills.',
+      image: 'assets/img/BT.png',
       icon: 'bi-chat-dots',
-      isHighlighted: false
+      isHighlighted: true
     }
   ];
 }

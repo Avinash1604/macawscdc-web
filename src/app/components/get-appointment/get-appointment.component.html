@@ -1,4 +1,4 @@
-<section class="get-appointment-section py-5">
+<section class="get-appointment-section py-5 bg-color">
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-7">
@@ -17,17 +17,14 @@
                 <input name="phone" [(ngModel)]="formData.phone" class="form-control" placeholder="Phone">
               </div>
 
-              <div class="col-sm-6">
-                <label class="form-label">Email</label>
-                <input name="email" [(ngModel)]="formData.email" class="form-control" placeholder="Email">
-              </div>
+              
 
-              <div class="col-sm-6">
+              <!-- <div class="col-sm-6">
                 <label class="form-label">Doctor</label>
                 <select name="doctor" [(ngModel)]="formData.doctor" class="form-select">
                   <option *ngFor="let d of doctors" [value]="d">{{ d }}</option>
                 </select>
-              </div>
+              </div> -->
 
               <div class="col-sm-6">
                 <label class="form-label">Date</label>
@@ -37,6 +34,11 @@
               <div class="col-sm-6">
                 <label class="form-label">Time</label>
                 <input name="time" [(ngModel)]="formData.time" type="time" class="form-control">
+              </div>
+
+              <div class="col-sm-12">
+                <label class="form-label">Email</label>
+                <input name="email" [(ngModel)]="formData.email" class="form-control" placeholder="Email">
               </div>
 
               <div class="col-12">
@@ -54,9 +56,10 @@
 
       <div class="col-lg-5">
         <div class="help-panel">
-          <div class="label">Need more help?</div>
-          <h4 class="help-title">Helping children find their voice and build healthy relationships.</h4>
-          <p class="help-desc">Nam habitasse sed sit metus ligula et cras consectetuer. Ridiculus bibendum ornare litora vulputate duis rhoncus dolor fusce suspendisse nunc lacus.</p>
+          <br><br><br><br><br>
+          <div class="label">Require further assistance?</div>
+          <h4 class="help-title">Unlock Your Child’s Full Potential</h4>
+          <p class="help-desc">Helping children with unique needs unlock their potential by building communication, strengthening motor skills, preparing for school, and growing in confidence—through personalized care.</p>
 
           <hr>
 
@@ -65,7 +68,7 @@
               <div class="info-icon">📞</div>
               <div class="info-text">
                 <div class="info-label">CUSTOMER SERVICE</div>
-                <div class="info-value">888–2002–234</div>
+                <div class="info-value">+91-9071499599</div>
               </div>
             </div>
 
@@ -73,7 +76,7 @@
               <div class="info-icon">⏰</div>
               <div class="info-text">
                 <div class="info-label">OFFICE HOURS</div>
-                <div class="info-value">07.00 AM – 05.00 PM</div>
+                <div class="info-value">09.30 AM – 07.00 PM</div>
               </div>
             </div>
           </div>

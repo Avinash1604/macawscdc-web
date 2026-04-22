@@ -11,20 +11,20 @@ import { CommonModule } from '@angular/common';
 export class WhoWeAreComponent {
   features = [
     {
-      title: 'Science Based Research',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      title: 'Evidence-Based Care',
+      description: 'Proven therapy methods backed by clinical research. We use scientifically validated therapy approaches to ensure safe, effective, and measurable outcomes. Our programs are built on standardized assessments and globally recognized techniques to support consistent progress in communication, behavior, learning, and development.'
     },
     {
       title: 'Holistic Approach',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      description: 'Supporting the whole child—mind, body, and behavior. We go beyond isolated therapy by addressing your child’s overall development. Our integrated approach combines communication, motor skills, emotional well-being, and social interaction—ensuring balanced growth across all developmental areas. '
     },
     {
       title: 'Parent Report Support',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      description: 'Regular updates and clear progress reports for parents. We believe parents are key partners in a child’s development. Our team provides structured reports, progress tracking, and actionable insights so you can support your child’s growth at home with confidence.'
     },
     {
       title: 'Free Consultations',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      description: 'Start with a no-obligation expert consultation. We offer an initial consultation to understand your child’s needs, discuss concerns, and guide you on the right therapy path. This helps parents make informed decisions without pressure.'
     }
   ];
 }

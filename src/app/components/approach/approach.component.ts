@@ -12,23 +12,23 @@ export class ApproachComponent {
   steps = [
     {
       number: 1,
-      title: 'Get Appointment',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      title: 'Schedule Your Consultation',
+      description: 'Easily book your child’s assessment with our expert therapists at your convenience. Choose a time that works for you and take the first step toward understanding your child’s developmental needs.'
     },
     {
       number: 2,
-      title: 'Meet With Our Therapist',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      title: 'Consultation with Our Specialist',
+      description: 'Our certified child specialists connect with you and your child to understand concerns, developmental history, and behavioral patterns in a warm, child-friendly environment.'
     },
     {
       number: 3,
-      title: 'Diagnostic Observation',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      title: 'Comprehensive Assessment',
+      description: 'We conduct detailed assessments using evidence-based tools to identify developmental delays, sensory challenges, or behavioral concerns, ensuring an accurate and personalized therapy plan.'
     },
     {
       number: 4,
-      title: 'Begin Therapy Service',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+      title: 'Start Therapy Program',
+      description: 'Based on the assessment, we design a customized therapy program focused on improving communication, behavior, motor skills, and overall development—while continuously tracking progress.'
     }
   ];
 }

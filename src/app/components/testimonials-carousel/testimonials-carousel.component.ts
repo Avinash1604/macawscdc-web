@@ -14,23 +14,23 @@ export class TestimonialsCarouselComponent implements AfterViewInit, OnDestroy {
 
   testimonials = [
     {
-      name: 'Harrison Foster',
-      city: 'BANDUNG',
-      quote: 'Quisque egestas consectetuer imperdiet sodales pretium ridiculus proin. Integer praesent nostra est cras potenti egestas. Rhoncus pharetra molestie ipsum urna magna proin consectetur.',
+      name: 'Ayan S., Parent',
+      city: 'Bangalore',
+      quote: 'The therapists are patient, knowledgeable, and truly committed to every child’s progress',
       avatar: 'assets/theme/avatar1.jpg',
       rating: 5
     },
     {
-      name: 'Jordan Thomson',
-      city: 'JAKARTA',
-      quote: 'Quisque egestas consectetuer imperdiet sodales pretium ridiculus proin. Integer praesent nostra est cras potenti egestas. Rhoncus pharetra molestie ipsum urna magna proin consectetur.',
+      name: 'Riya Father',
+      city: 'Bangalore',
+      quote: 'The personalized therapy plan and regular progress updates made a huge difference for us.',
       avatar: 'assets/theme/avatar2.jpg',
-      rating: 5
+      rating: 4
     },
     {
-      name: 'Scarlett Gallagher',
-      city: 'BANDUNG',
-      quote: 'Quisque egestas consectetuer imperdiet sodales pretium ridiculus proin. Integer praesent nostra est cras potenti egestas. Rhoncus pharetra molestie ipsum urna magna proin consectetur.',
+      name: 'Anjali M., Mother',
+      city: 'Jayanagar',
+      quote: 'What we appreciate most is the guidance for parents. The home-based tips and continuous support helped us see real improvements in behavior and learning.',
       avatar: 'assets/theme/avatar3.jpg',
       rating: 5
     }

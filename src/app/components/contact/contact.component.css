@@ -152,7 +152,7 @@
 
 /* Primary Button */
 .btn-primary {
-  background: var(--kindera-primary);
+  background: #0f9d99;
   border: none;
   border-radius: 12px;
   padding: 12px 28px;

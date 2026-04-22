@@ -18,9 +18,9 @@ export class ContactComponent {
   };
 
   contactItems = [
-    { icon: 'bi-geo-alt-fill',    label: 'Address',    value: '123 Healing Way, Suite 201, New York, NY 10001', bg: 'rgba(255,255,255,0.2)', color: '#fff' },
-    { icon: 'bi-telephone-fill',  label: 'Phone',      value: '+1 (555) 123-4567', bg: 'rgba(255,255,255,0.2)', color: '#fff' },
-    { icon: 'bi-envelope-fill',   label: 'Email',      value: 'hello@kinderapsy.com', bg: 'rgba(255,255,255,0.2)', color: '#fff' }
+    { icon: 'bi-geo-alt-fill',    label: 'Address',    value: '35, 22nd Cross Rd, Jaya Nagar 1st Block, Jayanagar 3rd Block East, Jayanagar, Bengaluru, Karnataka 560011', bg: 'rgba(255,255,255,0.2)', color: '#fff' },
+    { icon: 'bi-telephone-fill',  label: 'Phone',      value: '+91-9071499599', bg: 'rgba(255,255,255,0.2)', color: '#fff' },
+    { icon: 'bi-envelope-fill',   label: 'Email',      value: 'accounts@macawscdc.com', bg: 'rgba(255,255,255,0.2)', color: '#fff' }
   ];
 
   submitForm() {

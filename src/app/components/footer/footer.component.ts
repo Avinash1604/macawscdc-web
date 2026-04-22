@@ -14,5 +14,5 @@ export class FooterComponent {
     { href:'#services',label:'Services' },{ href:'#team',label:'Our Team' },
     { href:'#testimonials',label:'Reviews' },{ href:'#faq',label:'FAQ' },{ href:'#contact',label:'Contact' }
   ];
-  services = ['Play Therapy','Cognitive Behavioral Therapy','Family Therapy','Anxiety & Depression','ADHD Support','Social Skills Training'];
+  services = ['Play Therapy','Behavioral Therapy','Occupational Therapy','School Readiness','Social Skills Training'];
 }
