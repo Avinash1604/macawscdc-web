@@ -1,0 +1,8 @@
+.about-header { padding: 72px 0; text-align: center; }
+.about-title { font-size: 44px; }
+.about-subtitle { max-width: 720px; margin: 0 auto; text-align: center; }
+.hero-image img { border-radius: 10px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+
+@media (max-width:768px){
+  .about-title{font-size:32px}
+}

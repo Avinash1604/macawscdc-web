@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
@@ -15,4 +16,13 @@ export class FooterComponent {
     { href:'#testimonials',label:'Reviews' },{ href:'#faq',label:'FAQ' },{ href:'#contact',label:'Contact' }
   ];
   services = ['Play Therapy','Behavioral Therapy','Occupational Therapy','School Readiness','Social Skills Training'];
+
+  linkFor(service: string) {
+    const key = service.toLowerCase();
+    if (key.includes('occupational')) return '/occupational-therapy';
+    if (key.includes('behavior') || key.includes('behaviour')) return '/behaviour-therapy';
+    if (key.includes('school')) return '/school-readiness';
+    // fallback: contact page
+    return '/contact';
+  }
 }

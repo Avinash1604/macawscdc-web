@@ -1,0 +1,13 @@
+/* Reuse about header styles where appropriate */
+.about-header { padding: 80px 0; text-align: center; }
+.about-header .about-title { font-size: 48px; }
+.about-subtitle { max-width: 720px; margin: 0 auto; text-align: center; }
+
+.hero-image img { box-shadow: 0 14px 30px rgba(16,71,192,0.12); border-radius: 12px; }
+
+section.container h2 { margin-top: 0; }
+
+@media (max-width: 768px) {
+  .about-header { padding: 48px 0; }
+  .about-header .about-title { font-size: 32px; }
+}

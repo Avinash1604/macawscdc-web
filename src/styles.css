@@ -161,3 +161,11 @@ h2 {
     font-weight: var(--e-global-typography-secondary-font-weight);
     line-height: var(--e-global-typography-secondary-line-height);
 }
+
+/* Section background utility for page backgrounds */
+.section-bg {
+  background-image: url('assets/img/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

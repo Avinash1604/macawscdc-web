@@ -1,0 +1,5 @@
+.about-header{padding:72px 0;text-align:center}
+.about-title{font-size:44px}
+.about-subtitle{max-width:720px;margin:0 auto}
+
+@media (max-width:768px){.about-title{font-size:32px}}

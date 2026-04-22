@@ -24,4 +24,11 @@
   .help-panel { margin-top: 18px; }
 }
 /* NAG */
-.bg-color{background-color:paleturquoise;}
+.bg-color{
+  background-image: url('/assets/img/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* fallback color */
+  background-color: paleturquoise;
+}

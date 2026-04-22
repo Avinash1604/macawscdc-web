@@ -14,6 +14,18 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/appointment/appointment.component').then(m => m.AppointmentPageComponent)
   },
   {
+    path: 'occupational-therapy',
+    loadComponent: () => import('./pages/occupational-therapy/occupational-therapy.component').then(m => m.OccupationalTherapyPageComponent)
+  },
+  {
+    path: 'behaviour-therapy',
+    loadComponent: () => import('./pages/behaviour-therapy/behaviour-therapy.component').then(m => m.BehaviourTherapyPageComponent)
+  },
+  {
+    path: 'school-readiness',
+    loadComponent: () => import('./pages/school-readiness/school-readiness.component').then(m => m.SchoolReadinessPageComponent)
+  },
+  {
     path: 'team',
     loadComponent: () => import('./components/team/team.component').then(m => m.TeamComponent)
   },
