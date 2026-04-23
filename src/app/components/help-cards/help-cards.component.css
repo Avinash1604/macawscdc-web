@@ -15,3 +15,29 @@
   .help-card { min-height: 260px; padding: 28px; }
   .help-icon { width:64px; height:64px; font-size:28px; margin-top:-40px; }
 }
+
+/* Enter animations for help-cards */
+@keyframes helpSlideInLeft {
+  from { transform: translateX(-28px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes helpSlideInRight {
+  from { transform: translateX(28px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+.enter-left { opacity: 0; animation: helpSlideInLeft 520ms cubic-bezier(.2,.9,.2,1) both; }
+.enter-right { opacity: 0; animation: helpSlideInRight 520ms cubic-bezier(.2,.9,.2,1) both; }
+
+.pre-enter-left, .pre-enter-right { opacity: 0; will-change: transform, opacity; }
+.pre-enter-left { transform: translateX(-28px); }
+.pre-enter-right { transform: translateX(28px); }
+
+.help-card.enter-left { animation-delay: 40ms; }
+.help-card.enter-right { animation-delay: 80ms; }
+
+@media (max-width: 576px) {
+  @keyframes helpSlideInBottom { from { transform: translateY(16px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .enter-left, .enter-right { animation-name: helpSlideInBottom; }
+}

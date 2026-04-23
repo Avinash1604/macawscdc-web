@@ -58,6 +58,71 @@
   .video-close { width: 36px; height: 36px; font-size: 20px; top: -14px; right: -14px; }
 }
 
+/* Image showcase decorative border */
+.image-showcase { position: relative; display: inline-block; max-width: 100%; }
+.image-showcase .img-wrap { position: relative; z-index: 3; border-radius: 0 0 0 200px; overflow: hidden; }
+.image-showcase img { display:block; width:100%; height:auto; }
+.image-showcase .image-border {
+  position: absolute;
+  z-index: 2;
+  inset: 0; /* occupy same area as image-wrap */
+  pointer-events: none;
+}
+
+/* green board / plate behind the image */
+.image-showcase .image-plate {
+  position: absolute;
+  z-index: 1;
+  /* show as a small plate at top-right only */
+  top: -18px;
+  right: -18px;
+  width: 56%;
+  height: 44%;
+  background: linear-gradient(135deg, var(--bs-secondary, #00B3AD) 0%, #00a79c 100%);
+  /* square top-right, rounded inner corners to match image */
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 14px 28px rgba(0,179,173,0.12);
+  transform: none;
+  pointer-events: none;
+}
+
+/* Draw top and right decorative border using pseudo elements so bottom/left remain clear */
+.image-showcase .image-border::before,
+.image-showcase .image-border::after {
+  content: '';
+  position: absolute;
+  background: var(--bs-secondary, #00B3AD);
+  border-radius: 6px;
+}
+
+/* top stripe */
+.image-showcase .image-border::before {
+  left: 12px;
+  right: 24px; /* leave space for the right stripe */
+  top: 12px;
+  height: 14px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; /* no curve at top-right */
+  box-shadow: 6px -6px 18px rgba(0,179,173,0.12);
+}
+
+/* right stripe */
+.image-showcase .image-border::after {
+  top: 24px;
+  bottom: -12px;
+  right: 12px;
+  width: 14px;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 0; /* square top-right */
+  box-shadow: 8px -8px 24px rgba(0,179,173,0.12);
+}
+
+@media (max-width: 768px) {
+  .image-showcase .image-border::before { left: 8px; right: 16px; top: 8px; height: 10px; box-shadow: 4px -4px 12px rgba(0,179,173,0.12); border-top-right-radius: 0; }
+  .image-showcase .image-border::after { top: 16px; bottom: -8px; right: 8px; width: 10px; box-shadow: 6px -6px 18px rgba(0,179,173,0.12); border-top-right-radius: 0; }
+  .image-showcase .image-plate { top: -10px; right: -10px; width: 48%; height: 36%; border-radius: 0 10px 10px 0; box-shadow: 0 10px 22px rgba(0,179,173,0.10); }
+}
+
 /* Typography */
 h1 {
   color: #1047C0;

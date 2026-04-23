@@ -36,3 +36,52 @@
   .why-images .small-img, .why-images .tall-img { width: 50%; }
   .why-choose-section { padding: 40px 0; }
 }
+
+/* Decorative small images placed at top-right and bottom-right inside .why-images */
+.why-images { position: relative; }
+.why-images .decor-img {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(16,71,192,0.08);
+  z-index: 3;
+  display: block;
+}
+.why-images .decor-top { top: -18px; right: 18px; }
+.why-images .decor-bottom { bottom: -18px; right: 18px; }
+
+@media (max-width: 1200px) {
+  .why-images .decor-img { width: 80px; height: 80px; }
+  .why-images .decor-top { top: -14px; right: 14px; }
+  .why-images .decor-bottom { bottom: -14px; right: 14px; }
+}
+
+@media (max-width: 992px) {
+  /* hide decorative images on smaller screens */
+  .why-images .decor-img { display: none; }
+}
+
+/* Enter animations for why-choose-us */
+@keyframes whySlideInLeft {
+  from { transform: translateX(-28px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes whySlideInRight {
+  from { transform: translateX(28px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.enter-left { opacity: 0; animation: whySlideInLeft 520ms cubic-bezier(.2,.9,.2,1) both; }
+.enter-right { opacity: 0; animation: whySlideInRight 520ms cubic-bezier(.2,.9,.2,1) both; }
+
+.pre-enter-left, .pre-enter-right { opacity: 0; will-change: transform, opacity; }
+.pre-enter-left { transform: translateX(-28px); }
+.pre-enter-right { transform: translateX(28px); }
+
+@media (max-width: 576px) {
+  @keyframes whySlideInBottom { from { transform: translateY(16px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .enter-left, .enter-right { animation-name: whySlideInBottom; }
+}

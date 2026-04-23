@@ -1,14 +1,14 @@
 <section class="therapies-section py-5">
   <div class="container">
     <!-- Header -->
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 pre-enter-left">
       <h2 class="therapies-title">Helping children discover their inner strength and resilience</h2>
     </div>
 
     <!-- Therapy Cards -->
     <div class="row g-4">
-      <div *ngFor="let therapy of therapies" class="col-lg-4">
-        <div class="therapy-card" [class.highlighted]="therapy.isHighlighted">
+      <div *ngFor="let therapy of therapies; let i = index" class="col-lg-4">
+        <div class="therapy-card" [class.highlighted]="therapy.isHighlighted" [class.pre-enter-right]="i % 2 === 0" [class.pre-enter-left]="i % 2 === 1">
           <!-- Image -->
           <div class="therapy-image">
             <img [src]="therapy.image" [alt]="therapy.title" class="img-fluid">

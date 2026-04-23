@@ -1,7 +1,7 @@
 <section class="approach-section py-5">
   <div class="container">
     <!-- Header -->
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 pre-enter-left">
       <h2 class="approach-title mb-3">Our Approach to Your Child’s Growth</h2>
       <p class="approach-description">We follow a structured, child-centric therapy process designed to identify, support, and nurture your child’s unique developmental needs—every step of the way.</p>
     </div>
@@ -17,7 +17,7 @@
             <path d="M 375 200 A 220 220 0 0 1 875 200" />
             <path d="M 625 200 A 200 200 0 0 1 1125 200" />
           </svg>
-          <div *ngFor="let step of steps; let i = index" class="step" [class.last]="i === steps.length - 1">
+          <div *ngFor="let step of steps; let i = index" class="step" [class.last]="i === steps.length - 1" [class.pre-enter-right]="i % 2 === 0" [class.pre-enter-left]="i % 2 === 1">
             <!-- Step Circle -->
             <div class="step-circle">
               <span class="step-number">{{ step.number }}</span>

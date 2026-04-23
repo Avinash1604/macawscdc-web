@@ -34,5 +34,46 @@
   background-color: paleturquoise;
 }
 
+/* Enter animations */
+@keyframes slideInFromLeft {
+  from { transform: translateX(-40px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(40px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+.enter-left {
+  opacity: 0;
+  animation: slideInFromLeft 600ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+.enter-right {
+  opacity: 0;
+  animation: slideInFromRight 600ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+/* small stagger for the right panel */
+.enter-right { animation-delay: 80ms; }
+
+@media (max-width: 576px) {
+  /* on very small screens slide from bottom instead for better UX */
+  @keyframes slideInFromBottom {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  .enter-left, .enter-right { animation-name: slideInFromBottom; }
+}
+
+/* Initial hidden states used when animations are triggered on scroll */
+.pre-enter-left, .pre-enter-right {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.pre-enter-left { transform: translateX(-40px); }
+.pre-enter-right { transform: translateX(40px); }
+
 
 

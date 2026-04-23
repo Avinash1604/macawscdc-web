@@ -155,3 +155,42 @@
   }
 }
 
+/* Enter animations for who-we-are */
+@keyframes whoSlideInLeft {
+  from { transform: translateX(-32px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes whoSlideInRight {
+  from { transform: translateX(32px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+.enter-left {
+  opacity: 0;
+  animation: whoSlideInLeft 520ms cubic-bezier(.2,.9,.2,1) both;
+}
+.enter-right {
+  opacity: 0;
+  animation: whoSlideInRight 520ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+.pre-enter-left, .pre-enter-right {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.pre-enter-left { transform: translateX(-32px); }
+.pre-enter-right { transform: translateX(32px); }
+
+/* small stagger for feature items */
+.features-box .feature-item.enter-left { animation-delay: 40ms; }
+.features-box .feature-item.enter-right { animation-delay: 80ms; }
+
+@media (max-width: 576px) {
+  @keyframes whoSlideInBottom {
+    from { transform: translateY(16px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  .enter-left, .enter-right { animation-name: whoSlideInBottom; }
+}
+

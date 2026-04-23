@@ -345,3 +345,42 @@
     font-size: 0.9rem;
   }
 }
+
+/* Enter animations for therapies */
+@keyframes therapiesSlideInLeft {
+  from { transform: translateX(-28px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes therapiesSlideInRight {
+  from { transform: translateX(28px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+.enter-left {
+  opacity: 0;
+  animation: therapiesSlideInLeft 520ms cubic-bezier(.2,.9,.2,1) both;
+}
+.enter-right {
+  opacity: 0;
+  animation: therapiesSlideInRight 520ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+.pre-enter-left, .pre-enter-right {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.pre-enter-left { transform: translateX(-28px); }
+.pre-enter-right { transform: translateX(28px); }
+
+/* small stagger for cards */
+.therapy-card.enter-left { animation-delay: 40ms; }
+.therapy-card.enter-right { animation-delay: 80ms; }
+
+@media (max-width: 576px) {
+  @keyframes therapiesSlideInBottom {
+    from { transform: translateY(18px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  .enter-left, .enter-right { animation-name: therapiesSlideInBottom; }
+}
