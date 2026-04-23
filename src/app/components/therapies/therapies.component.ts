@@ -17,7 +17,8 @@ export class TherapiesComponent {
       fullDescription: 'Our occupational therapy programs are designed to strengthen motor development, sensory processing, and coordination. Through structured, child-friendly activities, we help children gain the skills they need to perform daily tasks with ease and confidence.',
       image: 'assets/img/OT.png',
       icon: 'bi-heart-pulse',
-      isHighlighted: true
+      isHighlighted: true,
+      route: '/occupational-therapy',
     },
     {
       id: 2,
@@ -26,7 +27,8 @@ export class TherapiesComponent {
       fullDescription: 'Our school readiness program helps children develop attention, communication, early learning skills, and classroom behavior. Through structured and play-based activities, we prepare children to adapt confidently to school routines and learning environments.',
       image: 'assets/img/SRP.png',
       icon: 'bi-activity',
-      isHighlighted: true
+      isHighlighted: true,
+      route: '/school-readiness',
     },
     {
       id: 3,
@@ -35,7 +37,28 @@ export class TherapiesComponent {
       fullDescription: 'Our behavior therapy programs focus on improving attention, emotional regulation, and social interaction. Through personalized strategies and consistent reinforcement, we help children build meaningful behavior patterns and everyday skills.',
       image: 'assets/img/BT.png',
       icon: 'bi-chat-dots',
-      isHighlighted: true
+      isHighlighted: true,
+      route: '/behaviour-therapy'
+    },
+    {
+      id: 4,
+      title: 'Therapy 1',
+      description: 'Build positive behaviors and improve focus.',
+      fullDescription: 'Our behavior therapy programs focus on improving attention, emotional regulation, and social interaction. Through personalized strategies and consistent reinforcement, we help children build meaningful behavior patterns and everyday skills.',
+      image: 'assets/img/BT.png',
+      icon: 'bi-chat-dots',
+      isHighlighted: true,
+      route: '/behaviour-therapy'
+    },
+    {
+      id: 5,
+      title: 'Therapy 2',
+      description: 'Build positive behaviors and improve focus.',
+      fullDescription: 'Our behavior therapy programs focus on improving attention, emotional regulation, and social interaction. Through personalized strategies and consistent reinforcement, we help children build meaningful behavior patterns and everyday skills.',
+      image: 'assets/img/BT.png',
+      icon: 'bi-chat-dots',
+      isHighlighted: true,
+      route: '/behaviour-therapy'
     }
   ];
 }

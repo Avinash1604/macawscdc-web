@@ -1,5 +1,77 @@
-.about-header{padding:72px 0;text-align:center}
-.about-title{font-size:44px}
-.about-subtitle{max-width:720px;margin:0 auto}
+.about-header {
+  padding: 80px 0;
+}
 
-@media (max-width:768px){.about-title{font-size:32px}}
+.about-title {
+  font-size: 48px;
+}
+
+.about-header-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-subtitle {
+  max-width: 720px;
+  margin: auto;
+}
+
+.hero-img {
+  max-width: 420px;
+  box-shadow: 0 14px 30px rgba(16,71,192,0.12);
+  border-radius: 12px;
+}
+
+/* Section Styling */
+.ot-section {
+  padding: 60px 0;
+}
+
+.alt-bg {
+  background-color: #f8faff;
+}
+
+/* Images */
+.section-img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Typography */
+.ot-section h2 {
+  margin-bottom: 16px;
+}
+
+.ot-section h3 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.ot-section ul {
+  padding-left: 18px;
+}
+
+.ot-section li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 32px;
+  }
+
+  .ot-section {
+    text-align: center;
+  }
+
+  .ot-section .row {
+    flex-direction: column;
+  }
+}
