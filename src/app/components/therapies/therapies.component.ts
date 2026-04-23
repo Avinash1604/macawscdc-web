@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-therapies',
@@ -9,6 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./therapies.component.css']
 })
 export class TherapiesComponent {
+
+  constructor(private router: Router) {}
+
+
   therapies = [
     {
       id: 1,
@@ -18,7 +23,7 @@ export class TherapiesComponent {
       image: 'assets/img/OT.png',
       icon: 'bi-heart-pulse',
       isHighlighted: true,
-      route: '/occupational-therapy',
+      route: 'occupational-therapy',
     },
     {
       id: 2,
@@ -28,7 +33,7 @@ export class TherapiesComponent {
       image: 'assets/img/SRP.png',
       icon: 'bi-activity',
       isHighlighted: true,
-      route: '/school-readiness',
+      route: 'school-readiness',
     },
     {
       id: 3,
@@ -38,7 +43,7 @@ export class TherapiesComponent {
       image: 'assets/img/BT.png',
       icon: 'bi-chat-dots',
       isHighlighted: true,
-      route: '/behaviour-therapy'
+      route: 'behaviour-therapy'
     },
     {
       id: 4,
@@ -48,7 +53,7 @@ export class TherapiesComponent {
       image: 'assets/img/BT.png',
       icon: 'bi-chat-dots',
       isHighlighted: true,
-      route: '/behaviour-therapy'
+      route: 'therapy4'
     },
     {
       id: 5,
@@ -58,7 +63,12 @@ export class TherapiesComponent {
       image: 'assets/img/BT.png',
       icon: 'bi-chat-dots',
       isHighlighted: true,
-      route: '/behaviour-therapy'
+      route: 'therapy5'
     }
   ];
+
+  onLearnMore(therapy: any) {
+  console.log('Clicked:', therapy);
+  this.router.navigate(['/', therapy]);  
+}
 }

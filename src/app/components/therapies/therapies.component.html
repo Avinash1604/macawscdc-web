@@ -32,7 +32,7 @@
             <!-- Full Description (shown on hover) -->
             <div class="therapy-description-full">
               <p>{{ therapy.fullDescription }}</p>
-              <a routerLink="therapy.route" class="learn-more-btn">Learn more</a>
+              <a class="learn-more-btn" (click)="onLearnMore(therapy.route)">Learn more</a>
             </div>
           </div>
         </div>
