@@ -21,10 +21,10 @@ export const routes: Routes = [
     path: 'behaviour-therapy',
     loadComponent: () => import('./pages/behaviour-therapy/behaviour-therapy.component').then(m => m.BehaviourTherapyPageComponent)
   },
-  {
+  /* {
     path: 'school-readiness',
     loadComponent: () => import('./pages/school-readiness/school-readiness.component').then(m => m.SchoolReadinessPageComponent)
-  },
+  }, */
     {
     path: 'school-readiness',
     loadComponent: () => import('./pages/school-readiness/school-readiness.component').then(m => m.SchoolReadinessPageComponent)
@@ -37,10 +37,10 @@ export const routes: Routes = [
     path: 'therapy4',
     loadComponent: () => import('./pages/therapy4/therapy4.component').then(m => m.Therapy4)
   },
-  {
+ /*  {
     path: 'therapy5',
     loadComponent: () => import('./pages/therapy5/therapy5.component').then(m => m.Therapy5)
-  },
+  }, */
   {
     path: 'team',
     loadComponent: () => import('./components/team/team.component').then(m => m.TeamComponent)
