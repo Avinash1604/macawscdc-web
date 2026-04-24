@@ -15,13 +15,15 @@ export class FooterComponent {
     { href:'#services',label:'Services' },{ href:'#team',label:'Our Team' },
     { href:'#testimonials',label:'Reviews' },{ href:'#faq',label:'FAQ' },{ href:'#contact',label:'Contact' }
   ];
-  services = ['Play Therapy','Behavioral Therapy','Occupational Therapy','School Readiness','Social Skills Training'];
+  services = ['Speech Therapy','Behavioral Therapy','Occupational Therapy','School Readiness','Special Education'];
 
   linkFor(service: string) {
     const key = service.toLowerCase();
     if (key.includes('occupational')) return '/occupational-therapy';
     if (key.includes('behavior') || key.includes('behaviour')) return '/behaviour-therapy';
-    if (key.includes('school')) return '/school-readiness';
+    if (key.includes('speech')) return '/therapy4';
+   /*  if (key.includes('school')) return '/school-readiness';
+    if (key.includes('Special')) return '/school-readiness'; */
     // fallback: contact page
     return '/contact';
   }
