@@ -93,6 +93,6 @@
 .why-image {
   width: 100%;
   height: 100%;
-  max-height: 500px;   /* control section height */
-  object-fit: cover; /* IMPORTANT: no cropping */
+ /*  max-height: 500px;   /* control section height */ */
+  object-fit: contain; /* IMPORTANT: no cropping */
 }
