@@ -22,8 +22,8 @@ export class FooterComponent {
     if (key.includes('occupational')) return '/occupational-therapy';
     if (key.includes('behavior') || key.includes('behaviour')) return '/behaviour-therapy';
     if (key.includes('speech')) return '/therapy4';
-   /*  if (key.includes('school')) return '/school-readiness';
-    if (key.includes('Special')) return '/school-readiness'; */
+    if (key.includes('school')) return '/school-readiness';
+    if (key.includes('Special')) return '/school-readiness';
     // fallback: contact page
     return '/contact';
   }

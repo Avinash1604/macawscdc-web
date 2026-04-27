@@ -53,7 +53,7 @@ export class TherapiesComponent {
       image: 'assets/img/SRP.png',
       icon: 'bi-activity',
       isHighlighted: true,
-      /* route: 'school-readiness', */
+      route: 'school-readiness',
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ export class TherapiesComponent {
       image: 'assets/img/speducation.png',
       icon: 'bi-chat-dots',
       isHighlighted: true,
-     /*  route: 'therapy5' */
+      route: 'therapy5'
     }
   ];
 
