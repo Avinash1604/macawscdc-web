@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 export class HeroComponent {
   showVideo = false;
   // default embedded YouTube video (replace with any YouTube ID or local file)
-  videoSrc = 'https://www.youtube.com/embed/jXm0yXSkCjg?autoplay=1&rel=0';
+  videoSrc = 'https://youtu.be/DYoU7ihAz8g?si=n__UuRmu2I9_L3-V';
   sanitizedVideoSrc: SafeResourceUrl | null = null;
 
   constructor(private sanitizer: DomSanitizer) {}
