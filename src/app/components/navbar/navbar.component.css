@@ -28,14 +28,16 @@
 }
 
 .navbar-logo {
-    height: 125px;
+    height: 140px;
     width: auto;
     display: block;
+    margin: -32px 0;
 }
-
+ 
 @media (max-width: 768px) {
     .navbar-logo {
-        height: 44px;
+        height: 80px;
+        margin: -18px 0;
     }
 }
 
