@@ -36,3 +36,150 @@
     font-size: 16px;
   }
 }
+
+/* Mission & Vision Section */
+.mission-vision-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  padding: 80px 0;
+}
+
+.label-tag {
+  color: #00B3AD;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.75rem;
+}
+
+.mv-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 8px 28px rgba(16, 71, 192, 0.08);
+  border: 1px solid rgba(16, 71, 192, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(16, 71, 192, 0.12);
+}
+
+.mv-card-accent {
+  background: #f0fbfa;
+  border-color: rgba(0, 179, 173, 0.15);
+}
+
+.mv-card-accent .label-tag {
+  color: #1047C0;
+}
+
+.mv-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.mv-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.mv-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Specialities Section */
+.specialities-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.specialities-title {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.speciality-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid rgba(16, 71, 192, 0.08);
+  box-shadow: 0 6px 20px rgba(16, 71, 192, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speciality-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 179, 173, 0.18);
+}
+
+.speciality-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, #00B3AD 0%, #009a95 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+  box-shadow: 0 8px 20px rgba(0, 179, 173, 0.25);
+}
+
+.speciality-text {
+  color: #1047C0;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+}
+
+@media (max-width: 992px) {
+  .mv-title {
+    font-size: 1.6rem;
+  }
+
+  .specialities-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-vision-section,
+  .specialities-section {
+    padding: 60px 0;
+  }
+
+  .mv-card {
+    padding: 28px 24px;
+  }
+
+  .mv-title {
+    font-size: 1.4rem;
+  }
+
+  .mv-text {
+    font-size: 0.9rem;
+  }
+
+  .specialities-title {
+    font-size: 1.5rem;
+  }
+
+  .speciality-text {
+    font-size: 0.95rem;
+  }
+}
