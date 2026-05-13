@@ -20,6 +20,25 @@
     font-family: var(--e-global-typography-primary-font-family), sans-serif;
 }
 
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 1.5rem;
+}
+
+.navbar-logo {
+    height: 96px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 44px;
+    }
+}
+
 .navbar .navbar-nav .nav-link {
     color: #00B3AD;
     font-weight: 500;
