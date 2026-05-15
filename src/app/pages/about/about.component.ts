@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WhoWeAreComponent } from '../../components/who-we-are/who-we-are.component';
 import { GetAppointmentComponent } from '../../components/get-appointment/get-appointment.component';
 
@@ -9,4 +9,8 @@ import { GetAppointmentComponent } from '../../components/get-appointment/get-ap
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutPageComponent {}
+export class AboutPageComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+}
